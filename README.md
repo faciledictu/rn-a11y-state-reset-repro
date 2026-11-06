@@ -55,5 +55,5 @@ read from a fresh launch after 0 to 3 presses (0 to 4 for section 1).
 | 9 | `Pressable`, `aria-expanded` true → not set | the COLLAPSE action stays | no EXPAND or COLLAPSE |
 
 Sections 4 and 7 work: the new state still has `busy`, or `Pressable` sends an
-empty state that replaces the old one. With the fix, every element updated in
-place matches its control at every step.
+empty state that replaces the old one. With the fix
+(react/react-native#59840), every element updated in place matches its control at every step.
